@@ -51,3 +51,15 @@ A valid leader election algorithm must meet the following conditions:
 
 ## Termination
 - When enough time passes, every node in the ring (including your node) should have stopped sending messages (Termination condition) and had the same ID in a member variable named ```leaderID``` (Uniqueness and Agreement conditions).
+
+## Log
+- When a process receives a message, it should clearly show, on a log file ```log.txt```,
+  - ```uuid``` in the message
+  - ```flag```
+  - if the process's uuid is larger than the message's uuid (1 if larger; 0 if same; -1 if smaller)
+  - if this process is in state 0 (still trying to find a leader) or state 1 (it knows the leader's ID).
+    - If it is in state 1, show the leader's ID
+- When a process ignores the message, it should clearly show, on a log file, that the received message was ignored.
+- When a process sends a message, it should clearly show, on a log file, 
+  - ```uuid``` in the message
+  - ```flag```
