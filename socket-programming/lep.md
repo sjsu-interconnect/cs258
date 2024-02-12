@@ -39,6 +39,7 @@ A valid leader election algorithm must meet the following conditions:
 - Read the first two paragraphs under under [the _Asynchronous ring_ section](https://en.wikipedia.org/wiki/Leader_election#Asynchronous_ring[3]) in the Wikipedia reference article.
 - Sending direction
   - You should receive messages as a Server and send messages as a Client.
+- Once you, as a client, are connected to a server, you should send a message with your uuid (without any comparison) as the initial message. This only happens once.
 
 ## Message Format
 - You must define a ```Message``` class, which have two member variables:
