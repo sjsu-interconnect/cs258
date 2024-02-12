@@ -34,6 +34,15 @@ A valid leader election algorithm must meet the following conditions:
     - The second line is the info exchanged with another student (as a client).
   - When you run the code, the configuration file should be used to initialize the connections. (You may want to set a reasonable length of sleep time to wait for a server node to be up.)
 
+## Multithreading
+- When you ```accept``` a connection, the server process needs to be run in a separate thread.
+- This is because, if the single thread program has ```accept``` and ```connect``` in a sequence (as follows), there is no one to start the client connection, while waiting as a server with the ```accept```
+```
+1: server.accept()
+2: client.connect()
+```
+- After a connection is established, you can use single threading (or keep the multiple threads with a shared memory).
+
 ## Algorithm
 - Your node performs the $O(n^2)$ algorithm. 
 - Read the first two paragraphs under under [the _Asynchronous ring_ section](https://en.wikipedia.org/wiki/Leader_election#Asynchronous_ring[3]) in the Wikipedia reference article.
