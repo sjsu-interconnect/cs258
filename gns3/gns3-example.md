@@ -2,7 +2,7 @@
 
 ## Exercise 1
 - Connect two VPCSes by a switch.
-- Set up IP addresses of the PCs by ```ip <IP address>``` [Documentation here](https://docs.gns3.com/docs/emulators/vpcs/)
+- Set up IP addresses of the PCs by ```ip <IP address>/<mask>``` [Documentation here](https://docs.gns3.com/docs/emulators/vpcs/)
   - PC1 ```10.0.1.2```
   - PC2 ```10.0.1.3```
 
@@ -40,5 +40,6 @@
 - Send ping from PC1 to PC2
   - What happened?
   - Why?
-
-
+- A default gateway
+  - Check the options of the ```ip``` command with ```ip ?```
+  - You can print the current settings with ```show```
