@@ -33,8 +33,10 @@ class EdgeStats:
         # remaining capacity
         self.cap = cap 
 
-        # spectrum state (a list of requests showing color <-> request mapping). Each index of this list represents a color
+        # spectrum state (a list of requests, showing color <-> request mapping). Each index of this list represents a color
         self.__slots = [None] * cap
+        # a list of the remaining holding times corresponding to the mapped requests
+        self.__hts = [0] * cap
 
     def __str__(self) -> str:
         return f'{self.id}, cap = {self.cap}: {self.reqs}'
@@ -48,11 +50,8 @@ class EdgeStats:
         """
         pass
 
-    def remove_request(req: Request):
-        """update self.__slots by removing a request
-
-        Args:
-            req (Request): a request to be removed
+    def remove_requests():
+        """update self.__slots by removing the leaving requests based on self.__hts; Also, self.__hts should be updated in this function.
         """
         pass
 
@@ -115,5 +114,5 @@ if __name__ == "__main__":
     for req in requests:
         # 4.1 use the route function to map the request onto the topology (update EdgeStats)
 
-        # 4.2 remove all requests that exhausted their holding times
+        # 4.2 remove all requests that exhausted their holding times (use remove_requests)
         pass
