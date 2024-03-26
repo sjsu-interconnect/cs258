@@ -2,6 +2,7 @@ import java.io.Serializable;
 import java.util.UUID;
 
 public class Message implements Serializable {
+    private static final long serialVersionUID = 4201L;
     private UUID uuid;
     private int flag;
 
