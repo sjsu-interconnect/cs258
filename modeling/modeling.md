@@ -19,11 +19,11 @@
 ### Simulation Assumptions
 - We do not use real datasets (request traces or network capacity). We need to put reasonable assumptions to simulate the behaviors of networks and requests.
 - Parameters
-  - Link capacity
-  - Requests
-    - source and destination nodes
-    - holding time
-  - Network topology
+  - Link capacity (e.g. 10)
+  - Requests (num_requests = 40)
+    - source and destination nodes (random)
+    - holding time (random between 2 and 5)
+  - Network topology (ATMnet: http://www.topology-zoo.org/files/Atmnet.gml)
 - Algorithm
   - routing algorithm (e.g., shortest path)
   - color selection algorithm (e.g., smaller index first)
