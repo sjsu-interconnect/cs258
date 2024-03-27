@@ -23,7 +23,10 @@
   - Requests (num_requests = 40)
     - source and destination nodes (random)
     - holding time (random between 2 and 5)
-  - Network topology (ATMnet: http://www.topology-zoo.org/files/Atmnet.gml)
+  - Network topology 
+    - A simple graph topology:
+      - (1,2), (1,3), (1,4), (2,4), (3,0), (4,0)
+    - (ATMnet: http://www.topology-zoo.org/files/Atmnet.gml)
 - Algorithm
   - routing algorithm (e.g., shortest path)
   - color selection algorithm (e.g., smaller index first)
