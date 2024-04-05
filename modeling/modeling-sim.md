@@ -27,8 +27,8 @@ $$u_e[t] = \dfrac{\text{the number of occupied colors on edge }e \text{ at time 
 ## Simulation Tasks
 **(Task 1)** For the following three scenarios (A, B, and C), record the aforementioned performance metrics.
 
-- (Scenario A) ```min_ht = max_ht = 2``` (All requests have a holding time of 2 time rounds.)
-- (Scenario B) ```min_ht = max_ht = 6``` (All requests have a holding time of 5 time rounds.)
+- (Scenario A) ```min_ht = 2``` and ```max_ht = 3``` (All requests have a holding time of 2 time rounds.)
+- (Scenario B) ```min_ht = 5``` and ```max_ht = 6``` (All requests have a holding time of 5 time rounds.)
 - (Scenario C) ```min_ht = 4``` and ```max_ht = 10```
 - (Scenario D) ```min_ht = 4``` and ```max_ht = 10```; ```source = 0``` and ```destination = np.random.randint(1,5)```: The destination is selected randomly between node 1 and node 4.
 
