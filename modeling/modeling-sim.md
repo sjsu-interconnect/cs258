@@ -22,7 +22,7 @@
 ## Performance Metrics
 - Count the number of blocked requests at each time round throughout the simulation (=40 for-loop rounds)
 - Save the utilization of each link at each round
-$$u_e[t] = \dfrac{\text{the number of occupied colors on edge }e \text{ at time } t}{5}$$
+$$u_t(e) = \dfrac{\text{the number of occupied colors on edge }e \text{ at time } t}{5}$$
 
 ## Simulation Tasks
 **(Task 1)** For the following three scenarios (A, B, and C), record the aforementioned performance metrics.
