@@ -89,7 +89,7 @@ To start capturing, for example, capture ```s1-eth1```.
 
 
 ## 4. GUI
-You can use GUI through ```Windows App``` (Used to be ```Microsoft remote desktop```) on macos or ```“Remote Desktop Connection``` on Windows.
+You can use GUI through ```Windows App``` (used to be called ```Microsoft remote desktop```) on macos or ```“Remote Desktop Connection``` on Windows.
 
 See this [reference](https://documentation.ubuntu.com/multipass/latest/how-to-guides/customise-multipass/set-up-a-graphical-interface/)
 

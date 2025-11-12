@@ -1,7 +1,7 @@
 import requests
 import json
 
-url = "http://0.0.0.0:8080/check_prime"
+url = "http://0.0.0.0:8080/prime"
 
 payload = {"number" : 10}
 
